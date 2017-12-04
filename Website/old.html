@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <title>Greenrar</title>
+    <link rel="stylesheet" type="text/css" media="all" href="files/style.css" />
+    <link type="text/css" href="files/jx.bar.css" rel="stylesheet" />
+    <script type="text/javascript" src="files/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="files/scripts.js"></script>
+    <script src="files/Main.js"></script>
+</head>
+<body class="home blog" style="background: url('files/images/backgrounds/bkimg.jpg') no-repeat center top white; background-color:green;">
+
+
+    <div id="float-bar" class="jx-bar jx-bar-button">
+
+        <div class="jx-bar-inner">
+            <ul>
+                <li><a href="index.html">
+                    <img src="files/images/bar-egn-button.png" alt="Ecology Global Network Button"  height="31px" /></a></li>
+            </ul>
+
+
+            <ul style="float: left; margin-left: 40px;">
+                <!--<li><a href="rss-news-feeds/index.html"><img src="files/images/bar-rss-button.png" alt="RSS News Feed Button" /></a></li>
+			<li><a href="http://twitter.com/ecologyglobal" target="_blank"><img src="files/images/bar-twitter-button.png" alt="Twitter" /></a></li>
+			<li><a href="http://www.facebook.com/EcologyGlobalNetwork" target="_blank"><img src="files/images/bar-facebook-button.png" alt="Facebook" /></a></li>
+			<li><a href="https://plus.google.com/114750308231529270366" target="_blank"><img src="files/images/bar-g-plus-button.png" alt="Google Plus"/></a></li>-->
+                image of sanskrit quote no more than 30px high !!!
+            </ul>
+
+            <form action="" name="" method="get">
+                <div id="search_area_wrap">
+                    <div id="search_area">
+                        <span class="search_left"></span>
+                        <span class="search_mid">
+                            <input type="text" class="search_mid_input" name="s" /></span>
+                        <button type="submit"  onclick="googlesearch()" class="search_right"></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="wrapper" class="hfeed"> <!--its centered coz width is fixed to 986 px and align left+right is set to auto-->
+        <!--the main theme structure  of css class-->
+        <div id="header">
+            <div id="header-inner">
+                <div id="branding" role="banner">
+                    <div id="logo-cont">
+                        <a href="index.html" title="Ecology Global Network" rel="home">
+                            <img src="files/images/eco-logo.png" alt="Ecology Global Network Logo" width="244px" height="85px" />
+                        </a>
+                    </div>
+
+                </div>
+                <!-- #branding -->
+
+
+                <div id="top-nav" role="navigation">
+                    <ul id="top-nav-top">
+                        <li><a href="Bhome.html">
+                            <img src="files/images/top-nav/top-nav-eco-today.png" alt="BLOG" /></a></li>
+                        <li><a href="./element.html?element=1">
+                            <img src="files/images/top-nav/top-nav-earth.png" alt="Earth" /></a></li>
+                        <li><a href="./element.html?element=2">
+                            <img src="files/images/top-nav/top-nav-air.png" alt="Air" /></a></li>
+                        <li><a href="./element.html?element=3">
+                            <img src="files/images/top-nav/top-nav-energy.png" alt="Energy" /></a></li>
+                        <li><a href="./element.html?element=4">
+                            <img src="files/images/top-nav/top-nav-water.png" alt="Water" /></a></li>
+                        <!-- <li><a href="elements.php?tab=earth&id=''">
+                            <img src="files/images/top-nav/top-nav-humans.png" alt="Humans" /></a></li>-->
+                        <li><a href="./element.html?element=5">
+                            <img style="margin-left: 7px;" src="files/images/top-nav/top-nav-species.png" alt="Species" /></a></li>
+                    </ul>
+                </div>
+                <!-- #top-nav -->
+            </div>
+            <!-- #header-inner -->
+        </div>
+        <!-- #header -->
+
+
+        <script>
+
+            jQuery('#top-nav-top > li > a').hover(
+                            function () {
+                                jQuery(this).addClass('active_hover');//alert(jQuery(this).attr('src'));//
+                            },
+                            function () {
+                                jQuery(this).removeClass('active_hover');
+                                //$(this).find("span:last").remove();
+                            }
+                        );
+
+    </script>
+        <div id="main">
+
+           
+            <div id="home_slider">
+               
+                <div id="slide_pagi_cont">  <!--numbers for pics-->
+                    <div id="slide_pagi_inner">
+                        <div class="pagi">
+                            <p><a class="pagi_indiv" id="pagi_1">1</a></p>
+                        </div>
+                        <div class="pagi  ">
+                            <p><a class="pagi_indiv" id="pagi_2">2</a></p>
+                        </div>
+                        <div class="pagi  ">
+                            <p><a class="pagi_indiv" id="pagi_3">3</a></p>
+                        </div>
+                        <div class="pagi  ">
+                            <p><a class="pagi_indiv" id="pagi_4">4</a></p>
+                        </div>
+                        <div class="pagi  ">
+                            <p><a class="pagi_indiv" id="pagi_5">5</a></p>
+                        </div>
+                        <div class="pagi  ">
+                            <p><a class="pagi_indiv" id="pagi_6">6</a></p>
+                        </div>
+                        <div class="pagi   pagi_current <!-- pagi_last-->">
+                            <p><a class="pagi_indiv" id="pagi_7">7</a></p>
+                        </div>
+                        <div class="pagi-pause" id="pagi-pause-div">
+                            <p><a class="" id="pagi_pause"><span style="font-weight: bold;">||</span></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="about.html" title="About Us">  <!--redirect to about-->
+                 <div id="logo" class="logo" style="width:50px;height:50px;">
+                 </div></a>
+                <div class="slide" style="display: none;" id="slide_1">
+                    <a class="link" href="http://ecology.com/about-us/?cat_=3" title="Welcome to the new Ecology Global Network" trunc_title="Welcome to the new Ecology Global Network">
+                        <img width="986" height="380" src="files/images/rotating/1.png" class="feat_slide wp-post-image" alt="Welcome to the new Ecology Global Network" title="Welcome to the new Ecology Global Network" /></a>
+                </div>
+                <div class="slide" style="display: none;" id="slide_2">
+                    <a class="link" href="2012/07/17/risk-reward-nature-play/index.html" title="But... Isn't it Dangerous?" trunc_title="But... Isn't it Dangerous?">
+                        <img width="986" height="380" src="files/images/rotating/2.jpg" class="feat_slide wp-post-image" alt="But... Isn&#039;t it Dangerous?" title="But... Isn&#039;t it Dangerous?" /></a>
+                </div>
+                <div class="slide" style="display: none;" id="slide_3">
+                    <a class="link" href="2012/07/23/national-park-posters/index.html" title="America’s Vintage WPA National Park Posters" trunc_title="America’s Vintage WPA National Park Posters">
+                        <img width="986" height="380" src="files/images/rotating/3.jpg" class="feat_slide wp-post-image" alt="America’s Vintage WPA National Park Posters" title="America’s Vintage WPA National Park Posters" /></a>
+                </div>
+                <div class="slide" style="display: none;" id="slide_4">
+                    <a class="link" href="2012/07/12/african-painted-dog/index.html" title="The African Painted Dog" trunc_title="The African Painted Dog">
+                        <img width="986" height="380" src="files/images/rotating/4.jpg" class="feat_slide wp-post-image" alt="The African Painted Dog" title="The African Painted Dog" /></a>
+                </div>
+                <div class="slide" style="display: none;" id="slide_5">
+                    <a class="link" href="2012/09/19/olympic-national-park/index.html" title="The Beaches of Olympic National Park by Andy Porter" trunc_title="The Beaches of Olympic National Park by Andy Porter">
+                        <img width="986" height="380" src="files/images/rotating/5.jpg" class="feat_slide wp-post-image" alt="The Beaches of Olympic National Park by Andy Porter" title="The Beaches of Olympic National Park by Andy Porter" /></a>
+                </div>
+                <div class="slide" style="display: none;" id="slide_6">
+                    <a class="link" href="2012/08/23/thought-trap-lost-connection-to-nature/index.html" title="Thought Trap 6: Humans Have Lost their Connection to Nature" trunc_title="Thought Trap 6: Humans Have Lost their Connection to...">
+                        <img width="986" height="380" src="files/images/rotating/6.jpg" class="feat_slide wp-post-image" alt="Thought Trap 6: Humans Have Lost their Connection to Nature" title="Thought Trap 6: Humans Have Lost their Connection to Nature" /></a>
+                </div>
+                <div class="slide" style="" id="slide_7">
+                    <a class="link" href="2012/09/04/valley-shadow-peak-oil/index.html" title="In The Valley of the Shadow of Peak Oil" trunc_title="In The Valley of the Shadow of Peak Oil">
+                        <img width="986" height="380" src="files/images/rotating/7.jpg" class="feat_slide wp-post-image" alt="In The Valley of the Shadow of Peak Oil" title="In The Valley of the Shadow of Peak Oil" /></a>
+                </div>
+
+            </div>
+
+            <script>
+
+                $(".pagi").click(function (event) {
+                    event.preventDefault();
+                    var clicked_id = $(this).find('a.pagi_indiv').attr('id').split('_');
+
+                    var the_slide = clicked_id[1];
+
+                    clicked_slide_switcher(the_slide);
+
+                });
+
+
+                $("#pagi-pause-div").bind("mouseleave", function (e) {
+                    //var timeleft = timerStep - ( (new Date()).getTime() - startTimeMS );
+                    //console.log('mouseleave- x:'+x+', x_next: '+x);
+                    slide_timer = setTimeout('slide_switcher(' + x + ')', 2000);
+                    //console.log('mouseleave setTimeout timerID: '+slide_timer);
+                });
+
+                $("#pagi-pause-div").bind("mouseenter", function (e) {
+                    //console.log('mouseenter- x:'+x+', x_next: '+x);
+                    //console.log('mouseenter clearTimeout timerID: '+slide_timer);
+                    clearTimeout(slide_timer);
+                });
+
+
+            </script>
+
+           
+
+
+            <div style="width: 986px; margin-top: 10px;">
+                <div id="col_et" style="float: left; width: 328px; margin: 0 15px 0 0;">
+                    <div class="home_side_bott_sec_cont home_side_pop2_cont">
+                        <a href="wetv-canada-license-renewal-application/index.html" title="WETV Canada License Renewal Application">
+                            <div id="home_et_world_pop_2">
+                                <img src="files/images/Featured/Flud_WETV_-CLRA.jpg" alt="WETV Canada License Renewal Application" />
+                            </div>
+
+                        </a>
+
+
+                    </div>
+                    
+                    <a href="topic/ecology-today/index.html">
+                        <div class="col_head">   <!--gives static image of ecology today-->
+                            <div class="date">
+                                <h3 class="datetoday" style="color: #fff;"></h3>  <!--have to make an javascript for this-->
+                            </div>
+                        </div>
+                    </a>
+
+                   
+                   <div >
+                        <a href="2012/09/10/deforestation-reduces-rainfall/index97f9.html?cat_=29&amp;et&amp;today">
+                            <img src="files/images/Featured/coffee-plantation-328f.jpg" title="Will Deforestation Reduce Tropical Rainfall? by Bob Petz" alt="Will Deforestation Reduce Tropical Rainfall? by Bob Petz" width="328" /></a>
+                        <a href="2012/09/10/deforestation-reduces-rainfall/index.html">
+                            <div id="today_post_meta_feat_art">
+                                <div>
+                                    <h3>FEATURED ARTICLE</h3>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div id="today_post_meta_title">
+                                <p>Will Deforestation Reduce Tropical Rainfall?</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="et_side_title_cont">
+                        <h2>
+                            <a href="ecology-today/et-perspectives/index.html">ET PERSPECTIVES</a>
+                        </h2>
+                    </div>
+
+                    
+                       <div class="clear"></div>
+                   
+                     <ul class="et_side_list" id="et_persp">
+                        <li>
+                            <a href="2012/09/27/volunteer-national-public-lands-day/index521b.html?cat_=29&amp;et">
+                                <div class="cont">
+                                    <p>Volunteer or Visit on National Public Lands Day, Saturday, September 29th</p>
+
+
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="2012/09/21/3rd-annual-world-rhino-day/index521b.html?cat_=29&amp;et">
+                                <div class="cont">
+                                    <p>3rd Annual World Rhino Day</p>
+
+
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="2012/09/10/deforestation-reduces-rainfall/index521b.html?cat_=29&amp;et">
+                                <div class="cont">
+                                    <p>Will Deforestation Reduce Tropical Rainfall?</p>
+
+
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="2012/09/04/dual-pol-doppler-radar-weather-forecast/index521b.html?cat_=29&amp;et">
+                                <div class="cont">
+                                    <p>Dual-Polarization Doppler Radar Promises Better Weather Forecasting</p>
+
+
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="2012/08/30/smart-filter-clean-oil-spills/index521b.html?cat_=29&amp;et">
+                                <div class="cont">
+                                    <p>Smart Filter Could Help Clean Oil Spills Without Detergents</p>
+
+
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="et_side_title_cont et_side_title_news_cont">
+                        <h2>
+                            <a href="ecology-today/et-news/index.html">ET NEWS</a>
+                        </h2>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <ul class="et_side_list" id="et_news">
+                        <li>
+                            <a href="2012/09/09/eu-greenhouse-gas-emissions-decline-2011/index521b.html?cat_=29&amp;et">
+                                <div class="cont">
+                                    <p>EU Greenhouse Gas Emissions Declined 2.5% in 2011 </p>
+
+
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="2012/08/27/arctic-sea-ice-loss-sets-record/index521b.html?cat_=29&amp;et">
+                                <div class="cont">
+                                    <p>Arctic Sea Ice Extent Sets a New Record Low</p>
+
+
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="2012/08/27/cleaner-fuel-efficient-locomotive/index521b.html?cat_=29&amp;et">
+                                <div class="cont">
+                                    <p>Cleaner-Burning, Fuel-Efficient Locomotives</p>
+
+
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="2012/08/22/us-wildfires-7-million-acres-2012-ytd/index521b.html?cat_=29&amp;et">
+                                <div class="cont">
+                                    <p>U.S. Wildfires on Record Pace: Nearly 7 Million Acres Destroyed this Year</p>
+
+
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="2012/08/16/urbanization-infrastructure-climate-change-asian-floods/index521b.html?cat_=29&amp;et">
+                                <div class="cont">
+                                    <p>Rapid Urbanization, Strained Infrastructure & Climate Change Exacerbate Asian Flooding</p>
+
+
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="clear" style="width: 100%; height: 4px;"></div>
+
+                    <!--<div class="home_side_bott_sec_cont">
+                        <a href="energy-ecology-tv/index.html">
+                            <img src="files/images/home-side-bott-how-much-energy.png" alt="How Much Energy" />
+                        </a>
+                    </div>
+
+
+
+                    <div class="clear"></div>
+
+
+
+                    <div class="home_side_bott_sec_cont" id="home_side_bott_sec_didya">
+                        <a href="#">
+                            <!-- <div id="home_et_did_you_know"> -->
+                            <!--<p>Per-capita water consumption is rising twice as fast as world population. In 20 years, demand for fresh water will increase by 40 percent.</p>
+                            <div class="clear"></div>
+                        </a>
+
+
+                        <div class="clear"></div>
+
+
+                    </div>
+
+                    <div class="clear"></div>-->
+                </div>
+
+
+
+
+                <!------------------------------------------------------------------------------------------>
+
+
+                <div id="right-cont" style="float: left; width: 643px;">
+                    <div id="home-4-cont" style="width: 643px; float: left; clear: both; height: 160px; background: #efefef; margin-bottom: 10px;">
+                        <div class="home_4_section">
+                            <a href="http://ecn.ecology.com/">
+                                <img src="files/images/CURRENTEVENTS.png" class="reg" alt="Upcoming Events" />
+                                <img src="files/images/CURRENTEVENTS_OVER..png" class="over" alt="Upcoming Events" />
+                            </a>
+                        </div>
+                       
+                        <div class="home_4_section">
+                            <a href="http://shop.ecology.com/">
+                                <img src="files/images/donate.png" class="reg" alt="Shop Ecology" />
+                                <img src="files/images/donate_over.png" class="over" alt="Shop Ecology" />
+                            </a>
+                        </div>
+
+                        <div class="home_4_section" style="margin: 0;">
+                            <a href="javascript:void(0);" onclick="window.open ('files/images/Featured/player.html', 'eco_player','status=0,toolbar=0,width=400,height=265,location=0,menubar=0,titlebar=0,resizable=0,directories=0');">
+
+                                <img style="height: 160px; width: 160px;" src="files/images/quiz.png" class="reg" alt="Ecology Radio" />
+                                <img style="height: 160px; width: 160px;" src="files/images/quiz_over.png" alt="Radio" class="over" />
+                           </a>
+                        </div>
+                         <div class="home_4_section">
+                            <a href="forum/index.html">
+                                <img src="files/images/GAMES.png" class="reg" alt="Play A Game" />
+                                <img src="files/images/GAME_OVER.png" class="over" alt="Play A Game" />
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div id="col_topics" style="float: left; width: 315px; margin: 0 10px 0 0;">
+                        <div class="col_head">
+                        </div>
+
+                        <div class="home_section">
+                            <a href="topic/earth/index.html">
+                                <img src="files/images/earth.png" class="reg" alt="Earth Home Section" /> <!--display:block-->
+                                <img src="files/images/earthafter.png" class="over" alt="Earth" />  <!--display none-->
+                            </a>
+
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a href="2012/09/26/spotlight-worlds-most-imperiled-ecosystems/index0d98.html?cat_=3">Spotlight on World's Most Imperiled Ecosystems</a>
+                            </div>
+                        </div>
+
+                        <div class="home_section">
+                            <a href="topic/air/index.html">
+                                <img src="files/images/air.png" class="reg" alt="Air Section" />
+                                <img src="files/images/airafter.png" class="over" alt="Air Logo" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a href="2012/09/25/acid-rain-scourge-of-the-past-or-trend-of-the-present/indexb86f.html?cat_=4">Acid Rain: Scourge of the Past or Trend of the Present?</a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="topic/energy/index.html">
+                                <img src="files/images/energy.png" class="reg" alt="Energy" />
+                                <img src="files/images/energyafter.png" class="over" alt="Energy" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a href="2012/09/25/jonathan-trent-energy-from-floating-algae-pods/index2001.html?cat_=6">Jonathan Trent: Energy From Floating Algae Pods</a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="topic/water/index.html">
+                                <img src="files/images/water.png" class="reg" alt="Water Section" />
+                                <img src="files/images/waterafter.png" class="over" alt="Water" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a href="2012/09/27/warming-ocean-start-big-shift-of-antarctic-ice/indexe468.html?cat_=5">Warming Ocean Could Start Big Shift of Antarctic Ice</a>
+                            </div>
+                        </div>
+
+                        
+                        <div class="home_section">
+                            <a href="topic/species/index.html">
+                                <img src="files/images/species.png" class="reg" alt="Species Section" />
+                                <img src="files/images/speciesafter.png" class="over" alt="Species Roll Over Button" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a href="2012/09/27/tropical-reefs-environmental-stresses/index32e9.html?cat_=8">Tropical Reefs and Environmental Stresses</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div id="col_features" style="float: right; width: 315px; margin: 0 0px 0 0;">
+                        <div class="col_head">
+                        </div>
+
+
+                        <div class="home_section">
+                            <a href="topic/ecoview/index.html">
+                                <img src="files/images/government_laws.jpg" class="reg" alt="ecoView Section" />
+                                <img src="files/images/government_laws_over.png" class="over" alt="ecoView" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a href="2012/09/14/women-girls-heart-blue-revolution/indexac65.html?cat_=10">Women and Girls at Heart of the Blue Revolution</a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="topic/inner-ecology/index.html">
+                                <img src="files/images/greentube.jpg" class="reg" alt="Inner Ecology" />
+                                <img src="files/images/greentube_over.png" class="over" alt="Inner Ecology Section" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a href="2012/09/28/babies-are-born-scientists/index43ac.html?cat_=11">Babies Are Born Scientists</a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="topic/planting-for-the-planet/index.html">
+                                <img src="files/images/green_lifestyle.jpg" class="reg" alt="Planting For The Planet" />
+                                <img src="files/images/green_lifestyle_over.png" class="over" alt="Planting For The Planet" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a href="2012/09/24/dirt-soil/indexc622.html?cat_=9">The Dirt on Soil</a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="topic/ecoarts/index.html">
+                                <img src="files/images/green_building.jpg" class="reg" alt="ecoArts" />
+                                <img src="files/images/green_building_over.png" class="over" alt="EcoArts" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a href="2012/09/19/olympic-national-park/index0529.html?cat_=13">The Beaches of Olympic National Park - Andy Porter</a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="topic/ecotipping/index.html">
+                                <img src="files/images/current_affairs.jpg" class="reg" alt="ecoTipping Logo Rollover" />
+                                <img src="files/images/current_affiars_over.png" class="over" alt="ecoTipping Logo" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a href="2012/09/28/precycling-rethinking-the-way-we-live/indexff8a.html?cat_=12">Precycling – Rethinking the Way We Live</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- END #right-cont-->
+            </div>
+
+
+
+            
+
+
+
+            <script type="text/javascript">
+                $('.home_section').hover(
+                      function () {
+                          $(this).find("img.over").fadeIn('fast');
+                          $(this).find("div.cat_quick_link_cont").fadeIn('fast');
+                          $(this).find("div.cat_quick_link_arrow").fadeIn('fast');
+                          $(this).find("img.reg").fadeOut('fast');
+                      },
+                      function () {
+                          $(this).find("img.reg").fadeIn('fast');
+                          $(this).find("img.over").fadeOut('fast');
+                          $(this).find("div.cat_quick_link_cont").fadeOut('fast');
+                          $(this).find("div.cat_quick_link_arrow").fadeOut('fast');
+                      }
+                    );
+                $('.home_4_section').hover(
+                      function () {
+                          $(this).find("img.over").fadeIn('fast');
+                          $(this).find("img.reg").fadeOut('fast');
+                      },
+                      function () {
+                          $(this).find("img.reg").fadeIn('fast');
+                          $(this).find("img.over").fadeOut('fast');
+                      }
+                    );
+</script>
+
+
+
+        </div>
+        <!-- #main -->
+    </div>
+    <!-- #wrapper -->
+    
+
+
+
+    <div id="footer">
+        <div>
+            <ul>
+            <li style="margin:7px 10px 5px 10px;position:relative;float:left; color:aquamarine; font-size:16px; "><a href="about.html">Contact Us</a></li>
+           
+            <li style="margin:7px 10px 5px 10px;position:relative;float:left; color:aquamarine; font-size:16px; "><a href="tou">Terms Of Use</a></li>
+        
+            <li style="margin:7px 10px 5px 10px;position:relative;float:left; color:aquamarine; font-size:16px; "><a href="#">baki social networking k links</a></li>
+        
+        </ul> 
+            <div style="margin-right:20px;  margin-bottom:2px; text-align:right">
+            <a href="index.html" title="Greenrar">
+                <img src="files/images/bar-egn-button.png" height="30px" /></a>
+        </div>
+        
+
+        </div>
+            
+
+    </div>
+
+
+    <!--<div id="footer" role="contentinfo">
+        <div id="footer-inner" style="background: transparent url('files/images/footer-bubble-bg.png') no-repeat bottom right; height: 227px;">
+            <div id="colophon">
+                <div class="footer-section cat-l1-list">
+                    <ul>
+                        <li><a href="topic/earth/index.html">EARTH</a></li>
+                        <li><a href="topic/air/index.html">AIR</a></li>
+                        <li><a href="topic/energy/index.html">ENERGY</a></li>
+                        <li><a href="topic/water/index.html">WATER</a></li>
+                        <li><a href="topic/humans/index.html">HUMANS</a></li>
+                        <li class="last"><a href="topic/species/index.html">SPECIES</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section cat-l1-list">
+                    <ul>
+                        <li><a href="topic/ecoview/index.html">ecoView</a></li>
+                        <li><a href="topic/inner-ecology/index.html">Inner Ecology</a></li>
+                        <li><a href="topic/planting-for-the-planet/index.html">Planting for the Planet</a></li>
+                        <li><a href="topic/ecoarts/index.html">ecoArts</a></li>
+                        <li><a href="topic/ecotipping/index.html">ecoTipping</a></li>
+                        <li class="last"><a href="topic/ecology-kids/index.html">Ecology Kids</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section cat-l1-list">
+                    <ul>
+                        <li><a href="topic/ecology-today/index.html">ECOLOGY TODAY</a></li>
+                        <li><a href="http://campus.ecology.com/">Ecology Campus</a></li>
+                        <li><a href="forum/index.html">Ecology Forum</a></li>
+                        <li class="last"><a href="http://shop.ecology.com/">Shop Ecology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section cat-l1-list resources">
+                    <ul style="margin: 0 0 0 85px;">
+                        <li><a href="earth-widgets/index.html">Resources</a></li>
+                        <li><a href="about-us/index.html">About</a></li>
+                        <li><a href="contact-us/index.html">Contact</a></li>
+                        <li class="last"><a href="terms-of-use/index.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section cat-l1-list resources">
+                    <ul>
+                        <li>Connect with us!</li>
+                        <li>
+                            <ul class="footer-share-buttons">
+                                <li><a href="rss-news-feeds/index.html">
+                                    <img src="files/images/footer-rss-button.png" alt="RSS News Feed" /></a></li>
+                                <li><a href="http://twitter.com/ecologyglobal" target="_blank">
+                                    <img src="files/images/footer-twitter-button.png" alt="Twitter" /></a></li>
+                                <li><a href="http://www.facebook.com/EcologyGlobalNetwork" target="_blank">
+                                    <img src="files/images/footer-facebook-button.png" alt="Facebook Button" /></a></li>
+                                <li><a href="https://plus.google.com/114750308231529270366" target="_blank">
+                                    <img src="files/images/footer-g-plus-button.png" alt="Google Plus" /></a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="index.html">
+                                    <img src="files/images/footer-logo.png" alt="Ecology" style="margin-left: -2px;" />
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>-->
+    <!-- #footer -->
+</body>
+</html>

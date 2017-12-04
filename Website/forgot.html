@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="Forgot Password" />
+    <title>Forgot Password</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/structure.css" rel="stylesheet" />
+</head>
+<body>
+    <form class="box login" action="forgotsign.php" method="post">
+        <fieldset class="boxBody">
+            <label>Username:</label>
+            <input type="text" name='txtuser' style="display:inline;width:175px" required="required" />@greenrar.com    
+            <label>Security Question:</label>
+            <select name="sec_ques">                
+                <option>What was your childhood nickname? </option>
+                <option>What is the name of your favorite childhood friend?</option>
+                <option>What is your favorite movie?</option>
+            </select>
+            <label>Answer:</label>
+            <input type="text" name='ans'>
+        </fieldset>
+        <footer>            
+            <input type="submit" class="btnLogin" value="Login">
+        </footer>
+    </form>
+</body>
+</html>

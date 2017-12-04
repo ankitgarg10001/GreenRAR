@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?DOCTYPE profil[
+
+<!ELEMENT profile (name,father_name,e_mail,contact)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT father_name (#PCDATA)>
+<!ELEMENT e_mail (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
+
+]?>
+
+<profil>
+- <profile>
+  <name>Rajat Jain</name> 
+  <father_name>Mr Bohra</father_name> 
+  <e_mail>bohrarajat@gmail.com</e_mail> 
+  <contact>9953232426</contact> 
+ </profile>
+-
+- 
+  </profil>

@@ -1,0 +1,81 @@
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="file:///C|/xampp/htdocs/q3/files/images/logo.ico">
+    <title>GreenRAR</title>
+    <link rel="stylesheet" type="text/css" media="all" href="file:///C|/xampp/htdocs/q3/files/style.css" />
+    <link type="text/css" href="file:///C|/xampp/htdocs/q3/files/jx.bar.css" rel="stylesheet" />
+    <script type="text/javascript" src="files/jquery-1.4.2.min.js"></script>
+    
+    <script src="file:///C|/xampp/htdocs/q3/files/Main.js"></script>
+    <meta name="google-translate-customization" content="4e2eb08d8a5f60e2-dec951a7106d3688-g7f117e2120f5c955-13" />
+<script>
+function showUser()
+{
+	
+
+var raju = document.getElementById("t2").value;
+var e = document.getElementById("t3").value;
+
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","getuser.php?q="+raju+"&rat="+e,true);
+xmlhttp.send();
+}
+
+</script>
+
+</head>
+<body>
+<div id="i1" class="i1">
+<div align="center">
+<img src="123.png">
+</div>
+<br>
+<br>
+<div align="center">
+<b><i>Choose Your Donation Option</i></b> &nbsp;&nbsp;&nbsp;
+<select id="t3">
+<option value="choose"><i>Choose</i></option>
+  <option value="Environment "><i>Environment</i></option>
+  <option value="Children"><i>Children</i></option>
+  <option value="Disabled"><i>Disabled</i></option>
+  <option value="Health"><i>Health</i></option>
+  
+</select>
+<br>
+<br>
+<b><i>I want to Donate Maximum</i></b>
+<input type="text" id="t2">
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="12345.png" class="s1" id="s1" width="150px" height="50px" onClick="showUser()">
+<div id="txtHint"></div>
+</div>
+<br>
+    <a href="../index.html"><h1>Go to main Page</h1></a>
+<div align="right">
+<marquee behavior="scroll" direction="left">
+<img src="1234.jpg">
+<img src="31231.png">
+<img src="23121.png" width="200px" height="260px">
+</marquee>
+</div>
+</div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,425 @@
+body {
+    background: #FEFEFE;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 0px;
+    margin-top: 0px;
+    color: #404040;
+    text-rendering: optimizeLegibility;
+    background-color: rgb(235, 240, 243);
+}
+
+a:link {
+    text-decoration: none;
+    color: #2d64b0;
+    border: 0px;
+    -moz-outline-style: none;
+}
+
+a:active {
+    color: #431e00;
+    border: 0px;
+    -moz-outline-style: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #0099cc;
+    border: 0px;
+    -moz-outline-style: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #214184;
+    border: 0px;
+    -moz-outline-style: none;
+}
+
+a:focus {
+    outline: none;
+    -moz-outline-style: none;
+}
+
+img {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    text-align: center;
+}
+
+.main_side {
+    width: 783px;
+    float: right;
+    height: 100%;
+    display: block;
+}
+
+.post {
+    width: 783px;
+    position: relative;
+    border: 1px solid #b4b4b4;
+    margin-bottom: 15px !important;
+    background: #fff;
+    -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    -ms-box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    -o-box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    float: left;
+}
+
+.p-head {
+    overflow: auto;
+    box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.3);
+    background-color: #EFEFEF; /*for browsers not able to make gradient*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#64bc46), to(#f9f9f9)); /* Chrome/Safari     */
+    background: -moz-linear-gradient(top, rgb(100, 188, 70), rgb(249, 249, 249)); /*//mozilla*/
+    background: -o-linear-gradient(top, rgb(100, 188, 70), rgb(249, 249, 249));
+    background: -ms-linear-gradient(top, rgb(100, 188, 70), rgb(249, 249, 249));
+    background: linear-gradient(top, rgb(100, 188, 70), rgb(249, 249, 249));
+    /*IE 6/7 */ filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#64bc46',EndColorStr='#f9f9f9');
+    /*IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#64bc46, endColorstr=#f9f9f9)";
+    background-color: transparent;
+    padding: 0px 10px 10px 10px;
+}
+
+    .p-head h2 {
+        padding-top: 8px;
+        padding-bottom: 5px;
+        font-size: 19px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #BABABA;
+        text-shadow: 0px 1px 0px #FFF;
+    }
+
+        .p-head h2 a:visited {
+            color: #000;
+        }
+
+        .p-head h2 a:hover {
+            color: #222;
+            text-decoration: underline;
+        }
+
+    .p-head .metadata {
+        width: 75%;
+        float: left;
+        margin-top: 1px;
+        text-shadow: 0px 1px 0px #FFF;
+    }
+
+    .p-head .content {
+        width: auto;
+        height: auto;
+        float: left;
+        text-transform: uppercase;
+    }
+
+    .p-head .comment {
+        width: 20%;
+        height: auto;
+        color: black;
+        font-size: 1.1em;
+        float: left;
+        margin-left: 5%;
+    }
+
+.p-con {
+    padding: 10px;
+    color: #222;
+    width: 95%;
+    margin: 2px 5px 2px 5px;
+}
+
+    .p-con div {
+        color: #222;
+    }
+
+    .p-con img.post-thumb {
+        margin: 5px 10px 5px 0;
+        border: 1px solid #b4b4b4;
+        max-width: 170px;
+        max-height: 170px;
+        height: 100%;
+        float: left;
+    }
+
+    .p-con p {
+        font: normal 12px/19px "Verdana", Arial, sans-serif;
+        padding: 0;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .p-con .read_more {
+        float: right;
+        display: block;
+        width: 121px;
+        height: 34px;
+        margin-top: 2em;
+        margin-right: -25px;
+        background: url("readMore.png") 0 0 no-repeat;
+    }
+
+        .p-con .read_more:hover {
+            background-position: 0 -34px;
+        }
+
+        .p-con .read_more:active {
+            background-position: 0 -68px;
+        }
+
+.clear {
+    clear: both;
+}
+
+#more_topics {
+    text-align: center;
+    font-weight: bold;
+    width: 783px;
+    position: relative;
+    background-color: #bbbbbb;
+    border: 2px solid #2e1e1e;
+    -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    -ms-box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    -o-box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    float: right;
+    margin: 10px 0px;
+}
+
+    #more_topics a {
+        padding: 10px 0px;
+        display: block;
+    }
+
+.sidebar {
+    width: 190px;
+    float: right;
+    height: 100%;
+    display: block;
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+    .sidebar ul {
+        background-color: white;
+        display: block;
+        border: 1px solid #dfddd7;
+        padding: 10px 2px 20px 10px;
+        border-radius: 10px 10px;
+        display: block;
+    }
+
+        .sidebar ul li {
+            overflow: hidden;
+            border-bottom: 2px solid #dfddd7;
+            margin-top: 3px;
+            display: block;
+        }
+
+            .sidebar ul li a {
+                color: #7a6933;
+                cursor: pointer;
+                padding: 4px 0px 4px 20px;
+                display: block;
+                text-decoration: none;
+                vertical-align: middle;
+                min-height: 16px;
+            }
+
+                .sidebar ul li a span.bullet {
+                    text-align: left;
+                    vertical-align: text-top;
+                    min-height: 16px;
+                    min-width: 16px;
+                    border: none;
+                    display: inline-block;
+                    border-radius: 3px 3px;
+                    /*background: -ms-linear-gradient(rgb(179, 159, 94) 0%, rgb(162, 142, 75) 100%);
+                    background: -moz-linear-gradient(center top, rgb(193, 173, 106) 0%, rgb(162, 142, 75) 100%) repeat scroll 0% 0% transparent;
+                    background-repeat: repeat;*/
+                    background-image: url("./images/blogcurr.png");
+                    margin: 0px 5px -4px -20px;
+                }
+
+            .sidebar ul li span.details {
+                color: #aba387;
+                font-size: 11px;
+                display: block;
+                padding: 0px 2px 2px 22px;
+                margin-top: -3px;
+            }
+
+                .sidebar ul li span.details a {
+                    padding: 0px;
+                    cursor: pointer;
+                    text-decoration: none;
+                    display: inline-block;
+                }
+
+    .sidebar li:hover {
+        background-color: #f4f4f4;
+        display: block;
+        text-decoration: none;
+    }
+
+        .sidebar li:hover span.bullet {
+            cursor: default;
+            background-image: url("./images/blogcurrover.png");
+        }
+
+        .sidebar li:hover a {
+            color: slateblue;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+
+
+
+
+
+#tabs_wrap {
+    width: 780px;
+    float: left;
+}
+
+.tabs_inner {
+    height: 27px;
+    padding-left: 10px;
+    margin-bottom: 12px;
+    border-bottom-color: #c9c9c9;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+    .tabs_inner .tabs {
+        margin-right: 8px;
+        float: left;
+    }
+
+    .tabs_inner ul li {
+        margin-right: 2px;
+        float: left;
+        line-height: 14px;
+        padding: 6px 12px;
+        font-size: 13px;
+        text-decoration: none;
+        border-color: #c9c9c9;
+        background-color: #e8e8e8;
+        border-width: 1px;
+        border-style: solid;
+        display: block;
+        /* The following four lines are to make the top left and top right corners of each tab rounded. */
+        -moz-border-radius-topleft: 8px;
+        border-top-left-radius: 8px;
+        -moz-border-radius-topright: 8px;
+        border-top-right-radius: 8px;
+        /* end of rounded borders */
+    }
+
+        .tabs_inner ul li.active {
+            background-color: #fff;
+            cursor: default;
+        }
+
+            .tabs_inner ul li.active:hover {
+                background-color: #fff;
+                cursor: default;
+                text-decoration: none;
+                border-bottom-color: #c9c9c9;
+            }
+
+        .tabs_inner ul li:hover {
+            border-bottom-color: aliceblue;
+            background-color: #cecece;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+.details {
+    margin-bottom: 10px;
+    width: 760px;
+    height: 100%;
+}
+
+    .details .sort {
+        float: right;
+        margin-top: 8px;
+    }
+
+    .details ul li {
+        margin-right: 6px;
+        float: left;
+    }
+
+        .details ul li.active:hover {
+            background-color: #fff;
+            cursor: default;
+            border: 0px;
+            /* The following four lines are to make the top left and top right corners of each tab rounded. */
+            -moz-border-radius: 40%;
+            border-radius: 40%;
+            /* end of rounded borders */
+        }
+
+        .details ul li.active {
+            background-color: #fff;
+            cursor: default;
+            /* The following four lines are to make the top left and top right corners of each tab rounded. */
+            -moz-border-radius: 40%;
+            border-radius: 40%;
+            /* end of rounded borders */
+        }
+
+        .details ul li:hover {
+            cursor: pointer;
+            border: 1px solid #c9c9c9;
+        }
+
+    .details .section_block_title {
+        float: left;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 5px;
+        margin-bottom: 15px;
+    }
+
+.search_box {
+    background-color: transparent;
+    padding: 10px 0px 10px 5px;
+    font-size: 15px;
+    margin: 15px 0px 20px 0px;
+    border-color: #c9c9c9;
+    border-width: 1px;
+    border-style: solid;
+    height: 100%;
+}
+
+    .search_box .search_input {
+        width: 78%;
+        padding: 10px 5px;
+        font-size: 15px;
+        margin-top: 1px;
+        border-color: #c9c9c9;
+        border-width: 1px;
+        float: left;
+    }
+
+    .search_box .button_find {
+        width: 15%;
+        height: 40px;
+        color: #404040;
+        padding: 0px 0px;
+        border-width: 0px;
+        cursor: pointer;
+        background-image: url("images/buttn.png");
+        min-height: 100%;
+        background-position-y: -110px;
+        background-position-x: -7px;
+        margin-left: -4px;
+        margin-top: 1px;
+    }

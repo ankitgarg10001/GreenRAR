@@ -1,0 +1,9 @@
+PHP: How Do I Read From a Text File?
+
+by nixCraft on January 25, 2006 · 13 comments· last updated at June 25, 2012
+
+How do I read from text file using PHP under Linux or UNIX?
+
+PHP does supports the file reading and writing. You can open a file using the fopen() function. Once the file is open, you can use the fgets() function to read from the file.
+
+For example, if you wish to open file called /tmp/file1.txt then following PHP code will help you to read file. fopen() will open fine in r (read) mode. Then while loop will open file using fgets() function till end of file:

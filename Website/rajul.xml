@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?DOCTYPE profil[
+
+<!ELEMENT profile (name,father_name,e_mail,contact)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT father_name (#PCDATA)>
+<!ELEMENT e_mail (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
+
+]?>
+
+<profil>
+- <profile>
+  <name>Rajul kukreja</name> 
+  <father_name>Mr K.L Kukreja</father_name> 
+  <e_mail>rajul3108@gmail.com</e_mail> 
+  <contact>7838927474</contact> 
+ </profile>
+-
+- 
+  </profil>

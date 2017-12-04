@@ -1,0 +1,344 @@
+
+        <div id="main">
+
+
+            <div id="home_slider">
+
+                <div id="slide_pagi_cont">
+                    <!--numbers for pics-->
+                    <div id="slide_pagi_inner">
+                        <div class="pagi">
+                            <p><a class="pagi_indiv" id="pagi_1">1</a></p>
+                        </div>
+                        <div class="pagi  ">
+                            <p><a class="pagi_indiv" id="pagi_2">2</a></p>
+                        </div>
+                        <div class="pagi  ">
+                            <p><a class="pagi_indiv" id="pagi_3">3</a></p>
+                        </div>
+                        <div class="pagi  ">
+                            <p><a class="pagi_indiv" id="pagi_4">4</a></p>
+                        </div>
+                        <div class="pagi  ">
+                            <p><a class="pagi_indiv" id="pagi_5">5</a></p>
+                        </div>
+                        <div class="pagi  ">
+                            <p><a class="pagi_indiv" id="pagi_6">6</a></p>
+                        </div>
+                        <div class="pagi   pagi_current ">
+                            <p><a class="pagi_indiv" id="pagi_7">7</a></p>
+                        </div>
+                        <div class="pagi-pause" id="pagi-pause-div">
+                            <p><a class="" id="pagi_pause"><span style="font-weight: bold;">||</span></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="about.html" title="About Us">
+                    <!--redirect to about-->
+                    <div id="logo" class="logo" style="width: 50px; height: 50px;">
+                    </div>
+                </a>
+                <div class="slide" style="display: none;" id="slide_1">
+                    <a class="link" href="page1.html" title="Save Earth Save Yourself" >
+                        <img width="986" height="380" src="files/images/rotating/1.png" class="feat_slide wp-post-image" alt="Save Earth Save Yourself" title="Save Earth Save Yourself" /></a>
+                </div>
+                <div class="slide" style="display: none;" id="slide_2">
+                    <a class="link" href="page2.html" title="Ctrl + s">
+                        <img width="986" height="380" src="files/images/rotating/2.jpg" class="Ctrl + s" alt="Ctrl + s" title="Ctrl + s" /></a>
+                </div>
+                <div class="slide" style="display: none;" id="slide_3">
+                    <a class="link" href="page3.html" title="Plant Some trees">
+                        <img width="986" height="380" src="files/images/rotating/3.jpg" class="Plant Some trees" alt="Plant Some trees" title="Plant Some trees" /></a>
+                </div>
+                <div class="slide" style="display: none;" id="slide_4">
+                    <a class="link" href="page4.html" title="Beauty Of Planet">
+                        <img width="986" height="380" src="files/images/rotating/4.jpg" class="Beauty Of Planet" alt="Beauty Of Planet" title="Beauty Of Planet" /></a>
+                </div>
+                <div class="slide" style="display: none;" id="slide_5">
+                    <a class="link" href="page5.html" title="Dont Be Self Centered..Think Green!!!">
+                        <img width="986" height="380" src="files/images/rotating/5.jpg" class="Dont Be Self Centered..Think Green!!!" alt="Dont Be Self Centered..Think Green!!!" title="Dont Be Self Centered..Think Green!!!" /></a>
+                </div>
+                <div class="slide" style="display: none;" id="slide_6">
+                    <a class="link" href="page6.html" title="Global Warming">
+                        <img width="986" height="380" src="files/images/rotating/6.jpg" class="Global Warming" alt="Global Warming" title="Global Warming" /></a>
+                </div>
+                <div class="slide" style="" id="slide_7">
+                    <a class="link" href="page7.html" title="CO2 Emmision">
+                        <img width="986" height="380" src="files/images/rotating/7.jpg" class="CO2 Emmision" alt="CO2 Emmision" title="CO2 Emmision" /></a>
+                </div>
+
+            </div>
+
+            <script>
+
+                $(".pagi").click(function (event) {
+                    event.preventDefault();
+                    var clicked_id = $(this).find('a.pagi_indiv').attr('id').split('_');
+
+                    var the_slide = clicked_id[1];
+
+                    clicked_slide_switcher(the_slide);
+
+                });
+
+
+                $("#pagi-pause-div").bind("mouseleave", function (e) {
+                    //var timeleft = timerStep - ( (new Date()).getTime() - startTimeMS );
+                    //console.log('mouseleave- x:'+x+', x_next: '+x);
+                    slide_timer = setTimeout('slide_switcher(' + x + ')', 2000);
+                    //console.log('mouseleave setTimeout timerID: '+slide_timer);
+                });
+
+                $("#pagi-pause-div").bind("mouseenter", function (e) {
+                    clearTimeout(slide_timer);
+                });
+
+
+            </script>
+
+            <div style="width: 986px; margin-top: 10px;">
+                <div id="col_et" style="float: left; width: 328px; height:1040px; margin: 0 15px 0 0;">
+                <a href="elements.php?tab=blogs&id=''">
+                    <div style="background: url(files/images/blog.png); overflow: hidden; cursor: default;" class="home_side_bott_sec_cont home_side_pop2_cont">
+                        <div id="home_et_world_pop_2">                            
+                        </div>                       
+                    </div>
+                    </a>
+
+                    
+                        <div class="col_head">
+                            <div class="date">
+                                <h3 class="datetoday" style="color: #fff;"></h3>
+                                <!--have to make an javascript for this-->
+                            </div>
+                        </div>
+
+
+                    <div id="sidevid" style="width: 328px;height: 220px;">
+
+                    </div>
+                    <div class="clear"></div>
+                    <div class="et_side_title_cont">
+                        <h2>
+                            <a href="elements.php?tab=videos&id=''" title="Videos">VIDEOS</a>
+                        </h2>
+                    </div>
+
+                   
+                    <div class="clear"></div>
+
+                    <ul class="et_side_list" id="et_persp">
+                       
+                    </ul>
+
+                    <div class="et_side_title_cont et_side_title_news_cont">
+                        <h2>
+                            <a href="elements.php?tab=news&id=''"  title="NEWS">NEWS</a>
+                        </h2>
+                    </div>
+
+                    <div class="clear"></div>
+                    <ul class="et_side_list" id="et_news">
+                        
+                    </ul>
+
+                    <div class="clear" style="width: 100%; height: 74px;"></div>
+
+                    
+                </div>
+
+
+                <div id="right-cont" style="float: left; width: 643px;">
+                    <div id="home-4-cont" style="width: 643px; float: left; clear: both; height: 160px; background: #efefef; margin-bottom: 10px;">
+                        <div class="home_4_section">
+                            <a href="elements.php?tab=events&id=''"  title="Evevts">
+                                <img src="files/images/CURRENTEVENTS.png" class="reg" alt="Upcoming Events" />
+                                <img src="files/images/CURRENTEVENTS_OVER..png" class="over" alt="Upcoming Events" />
+                            </a>
+                        </div>
+
+                        <div class="home_4_section">
+                            <a href="donate.html"  title="Donate">
+                                <img src="files/images/donate.png" class="reg" alt="Donate for Green Cause" />
+                                <img src="files/images/donate_over.png" class="over" alt="Donate for Green Cause" />
+                            </a>
+                        </div>
+
+                        <div class="home_4_section" style="margin: 0;">
+                            <a href="quiz.html"  title="Quiz">
+                                <img style="height: 160px; width: 160px;" src="files/images/quiz.png" class="reg" alt="green Quiz" />
+                                <img style="height: 160px; width: 160px;" src="files/images/quiz_over.png" alt="green Quiz" class="over" />
+                            </a>
+                        </div>
+                        <div class="home_4_section" id="kk">
+                            <a href="games.php"  title="Gamez">
+                                <img src="files/images/GAMES.png" class="reg" alt="Play A Game" />
+                                <img src="files/images/GAME_OVER.png" class="over" alt="Play A Game" />
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div id="col_topics" style="float: left; width: 315px; margin: 0 10px 0 0;">
+                        <div class="col_head">
+                        </div>
+
+                        <div class="home_section">
+                            <a href="elements.php?tab=earth&id=''"  title="Earth">
+                                <img src="files/images/earth.png" class="reg" alt="Earth Section" />
+                                <!--display:block-->
+                                <img src="files/images/earthafter.png" class="over" alt="Earth" />
+                                <!--display none-->
+                            </a>
+
+                            <div class="cat_quick_link_arrow" ></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="element0" href=""></a>
+                            </div>
+                        </div>
+
+                        <div class="home_section">
+                            <a href="elements.php?tab=air&id=''" title="air">
+                                <img src="files/images/air.png" class="reg" alt="Air Section" />
+                                <img src="files/images/airafter.png" class="over" alt="Air Logo" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="element1" href=""></a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="elements.php?tab=energy&id=''" title="Energy">
+                                <img src="files/images/energy.png" class="reg" alt="Energy Section" />
+                                <img src="files/images/energyafter.png" class="over" alt="Energy" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="element2" href=""></a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="elements.php?tab=water&id=''" title="Water">
+                                <img src="files/images/water.png" class="reg" alt="Water Section" />
+                                <img src="files/images/waterafter.png" class="over" alt="Water" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="element3" href=""></a>
+                            </div>
+                        </div>
+
+
+                        <div class="home_section">
+                            <a href="elements.php?tab=species&id=''" title="Species">
+                                <img src="files/images/species.png" class="reg" alt="Species Section" />
+                                <img src="files/images/speciesafter.png" class="over" alt="Species" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="element4" href=""></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="col_features" style="float: right; width: 315px; margin: 0 0px 0 0;">
+                        <div class="col_head">
+                        </div>
+
+
+                        <div class="home_section">
+                            <a href="elements.php?tab=laws&id=''" title="Laws">
+                                <img src="files/images/government_laws.png" class="reg" alt="Laws Section" />
+                                <img src="files/images/government_laws_over.png" class="over" alt="Laws" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="f0" href=""></a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="elements.php?tab=greentube&id=''" title="Green Tube">
+                                <img src="files/images/greentube.png" class="reg" alt="Green Videos Section" />
+                                <img src="files/images/greentube_over.png" class="over" alt="Green Videos" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="f1" href=""></a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="elements.php?tab=lifestyle&id=''" title="Green Lifestyle">
+                                <img src="files/images/green_lifestyle.png" class="reg" alt="Green Lifestyle" />
+                                <img src="files/images/green_lifestyle_over.png" class="over" alt="Green Lifestyle" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="f2" href=""></a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="elements.php?tab=buildings&id=''" title="Green Buildings">
+                                <img src="files/images/green_building.png" class="reg" alt="Green Buildings Section" />
+                                <img src="files/images/green_building_over.png" class="over" alt="Green Buildings" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="f3" href=""></a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="elements.php?tab=current+affairs&id=''" title="Current Affairs">
+                                <img src="files/images/current_affairs.png" class="reg" alt="Current Affairs" />
+                                <img src="files/images/current_affiars_over.png" class="over" alt="Current Affairs" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="f4" href=""></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END #right-cont-->
+            </div>
+
+
+
+
+
+
+
+            <script type="text/javascript">
+                $('.home_section').hover(
+                      function () {
+                          $(this).find("img.over").fadeIn('fast');
+                          $(this).find("div.cat_quick_link_cont").fadeIn('fast');
+                          $(this).find("div.cat_quick_link_arrow").fadeIn('fast');
+                          $(this).find("img.reg").fadeOut('fast');
+                      },
+                      function () {
+                          $(this).find("img.reg").fadeIn('fast');
+                          $(this).find("img.over").fadeOut('fast');
+                          $(this).find("div.cat_quick_link_cont").fadeOut('fast');
+                          $(this).find("div.cat_quick_link_arrow").fadeOut('fast');
+                      }
+                    );
+                $('.home_4_section').hover(
+                      function () {
+                          $(this).find("img.over").fadeIn('fast');
+                          $(this).find("img.reg").fadeOut('fast');
+                      },
+                      function () {
+                          $(this).find("img.reg").fadeIn('fast');
+                          $(this).find("img.over").fadeOut('fast');
+                      }
+                    );
+            </script>
+
+
+
+        </div>
+        <!-- #main -->

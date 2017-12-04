@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="files/images/logo.ico">
+    <title>GreenRAR</title>
+    <link rel="stylesheet" type="text/css" media="all" href="files/style.css" />
+    <link type="text/css" href="files/jx.bar.css" rel="stylesheet" />
+    <script type="text/javascript" src="files/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="files/scripts.js"></script>
+    <meta name="google-translate-customization" content="4e2eb08d8a5f60e2-dec951a7106d3688-g7f117e2120f5c955-13" />
+    <script src="jwplayer/jwplayer.js"></script>
+</head>
+
+<body class="home" style="background: url('files/images/backgrounds/bkimg.jpg') no-repeat center top white; background-color: aqua;">
+    <!--<body class="home" style="background: url('files/images/backgrounds/bkimg.jpg') no-repeat center top white; background-color: aqua;" onload="alert('Website Currently Under Development \n      Will Be Up n Running Soon !!! :D')">
+    -->
+
+    <div id="float-bar" class="jx-bar jx-bar-button">
+
+        <div class="jx-bar-inner">
+            <ul>
+                <li><a href="index.html">
+                    <img src="files/images/bar button.png" alt="GreenRAR Homepage" style="height: 31px" /></a></li>
+            </ul>
+
+            <img style="float: left; margin-left: 40px; height: 31px; width: 550px;" src="files/images/sloka.png" />
+
+            <form action="" name="" method="get">
+                <div id="search_area_wrap">
+                    <div id="search_area">
+                        <span class="search_left"></span>
+                        <span class="search_mid">
+                            <input type="text" id="search-query" class="search_mid_input" name="srch" />
+                        </span>
+                        <button type="submit" onclick="googlesearch()" class="search_right"></button>
+                    </div>
+                </div>
+            </form>
+            <div id="google_translate_element" style="margin-top: -10px; margin-left: 200px;"></div>
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, 'google_translate_element');
+                }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        </div>
+
+    </div>
+
+    <div id="wrapper" class="hfeed">
+        <div id="header">
+            <div id="header-inner">
+                <div id="branding" role="banner">
+                    <div id="logo-cont">
+                        <a href="index.html" title="Go Green With GreenRAR" rel="home">
+                            <img src="files/images/green-logo.png" alt="Go Green With GreenRAR" style="width: 244px; height: 85px;" />
+                        </a>
+                    </div>
+
+                </div>
+
+                <div id="rajul" style="height: 50px; margin: 0px 10px 10px 750px; text-align: center; color: #666; font-size: 16px; line-height: 18px;">
+                </div>
+
+
+                <!-- Main Topics Short mein :P -->
+
+
+                <div id="top-nav" role="navigation">
+                    <ul id="top-nav-top">
+                        <li><a href="Bhome.html">
+                            <img src="files/images/top-nav/top-nav-eco-today.png" alt="BLOG" /></a></li>
+                        <li><a href="./element.html?element=1">
+                            <img src="files/images/top-nav/top-nav-earth.png" alt="Earth" /></a></li>
+                        <li><a href="./element.html?element=2">
+                            <img src="files/images/top-nav/top-nav-air.png" alt="Air" /></a></li>
+                        <li><a href="./element.html?element=3">
+                            <img src="files/images/top-nav/top-nav-energy.png" alt="Energy" /></a></li>
+                        <li><a href="./element.html?element=4">
+                            <img src="files/images/top-nav/top-nav-water.png" alt="Water" /></a></li>
+                        <!-- <li><a href="./element.html?element=5">
+                            <img src="files/images/top-nav/top-nav-humans.png" alt="Humans" /></a></li>-->
+                        <li><a href="./element.html?element=5">
+                            <img style="margin-left: 7px;" src="files/images/top-nav/top-nav-species.png" alt="Species" /></a></li>
+                    </ul>
+
+                </div>
+                <!-- #top-nav -->
+            </div>
+            <!-- #header-inner -->
+        </div>
+        <!-- #header -->
+
+
+        <script>
+
+            jQuery('#top-nav-top > li > a').hover(
+                            function () {
+                                jQuery(this).addClass('active_hover');//alert(jQuery(this).attr('src'));//
+                            },
+                            function () {
+                                jQuery(this).removeClass('active_hover');
+                                //$(this).find("span:last").remove();
+                            }
+                        );
+
+        </script>
+        <div id="main">
+
+
+            <div id="home_slider">
+
+                <div id="slide_pagi_cont">
+                    <!--numbers for pics-->
+                    <div id="slide_pagi_inner">
+                        <div class="pagi">
+                            <p><a class="pagi_indiv" id="pagi_1">1</a></p>
+                        </div>
+                        <div class="pagi  ">
+                            <p><a class="pagi_indiv" id="pagi_2">2</a></p>
+                        </div>
+                        <div class="pagi  ">
+                            <p><a class="pagi_indiv" id="pagi_3">3</a></p>
+                        </div>
+                        <div class="pagi  ">
+                            <p><a class="pagi_indiv" id="pagi_4">4</a></p>
+                        </div>
+                        <div class="pagi  ">
+                            <p><a class="pagi_indiv" id="pagi_5">5</a></p>
+                        </div>
+                        <div class="pagi  ">
+                            <p><a class="pagi_indiv" id="pagi_6">6</a></p>
+                        </div>
+                        <div class="pagi   pagi_current ">
+                            <p><a class="pagi_indiv" id="pagi_7">7</a></p>
+                        </div>
+                        <div class="pagi-pause" id="pagi-pause-div">
+                            <p><a class="" id="pagi_pause"><span style="font-weight: bold;">||</span></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="about.html" title="About Us">
+                    <!--redirect to about-->
+                    <div id="logo" class="logo" style="width: 50px; height: 50px;">
+                    </div>
+                </a>
+                <div class="slide" style="display: none;" id="slide_1">
+                    <img width="986" height="380" src="files/images/rotating/1.jpg" alt="Save Earth Save Yourself" title="Save Earth Save Yourself" />
+                </div>
+                <div class="slide" style="display: none;" id="slide_2">
+                    <img width="986" height="380" src="files/images/rotating/2.jpg" alt="From the moment of birth,Spawned forth the Earth" title="From the moment of birth,Spawned forth the Earth" />
+                </div>
+                <div class="slide" style="display: none;" id="slide_3">
+                    <img width="986" height="380" src="files/images/rotating/3.jpg" alt="See its beauty,Then and Now" title="See its beauty,Then and Now" />
+                </div>
+                <div class="slide" style="display: none;" id="slide_4">
+                    <img width="986" height="380" src="files/images/rotating/4.jpg" alt="Hear its Silence" title="Hear its Silence" />
+                </div>
+                <div class="slide" style="display: none;" id="slide_5">
+                    <img width="986" height="380" src="files/images/rotating/5.jpg" alt="Hear its Cry" title="Hear its Cry" />
+                </div>
+                <div class="slide" style="display: none;" id="slide_6">
+                    <img width="986" height="380" src="files/images/rotating/6.jpg" alt="Raise your Voice" title="Raise your Voice" />
+                </div>
+                <div class="slide" style="" id="slide_7">
+                    <img width="986" height="380" src="files/images/rotating/7.jpg" alt="The Time is High" title="The Time is High" />
+                </div>
+
+            </div>
+
+            <script>
+
+                $(".pagi").click(function (event) {
+                    event.preventDefault();
+                    var clicked_id = $(this).find('a.pagi_indiv').attr('id').split('_');
+
+                    var the_slide = clicked_id[1];
+
+                    clicked_slide_switcher(the_slide);
+
+                });
+
+
+                $("#pagi-pause-div").bind("mouseleave", function (e) {
+                    //var timeleft = timerStep - ( (new Date()).getTime() - startTimeMS );
+                    //console.log('mouseleave- x:'+x+', x_next: '+x);
+                    slide_timer = setTimeout('slide_switcher(' + x + ')', 2000);
+                    //console.log('mouseleave setTimeout timerID: '+slide_timer);
+                });
+
+                $("#pagi-pause-div").bind("mouseenter", function (e) {
+                    clearTimeout(slide_timer);
+                });
+
+
+            </script>
+
+            <div style="width: 986px; margin-top: 10px;">
+                <div id="col_et" style="float: left; width: 328px; height: 1040px; margin: 0 15px 0 0;">
+                    <a href="Bhome.html">
+                        <div style="background: url(files/images/blog.jpg); overflow: hidden; cursor: default;color:white;" class="home_side_bott_sec_cont home_side_pop2_cont">
+                            <div id="home_et_world_pop_2">
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <div class="col_head">
+                        <div class="date">
+                            <h3 class="datetoday" style="color: #fff; display: block; float: left;"></h3>
+                            <!--have to make an javascript for this-->
+                        </div>
+                    </div>
+
+
+                    <div id="sidevid" style="width: 328px; height: 180px; display: block; float: left;">
+                        <div id="myElement">Loading the player...</div>
+                        <!--<script type="text/javascript">
+                            jwplayer("myElement").setup({
+                                file: "files/videonews/c.mp4",
+                                height: 174,
+                                width: 328,
+                            });
+                        </script>-->
+                    </div>
+                    <div class="clear"></div>
+                    <div class="et_side_title_cont">
+                        <h2>
+                            <a href="Greentube.html" title="Videos">VIDEOS</a>
+                        </h2>
+                    </div>
+
+
+                    <div class="clear"></div>
+
+                    <ul class="et_side_list" id="et_persp">
+                    </ul>
+
+                    <div class="et_side_title_cont et_side_title_news_cont">
+                        <h2>
+                            <a href="elements.php?tab=news&id=''" title="NEWS">NEWS</a>
+                        </h2>
+                    </div>
+
+                    <div class="clear"></div>
+                    <ul class="et_side_list" id="et_news">
+                    </ul>
+                    <div class="clear" style="width: 100%; height: 74px;"></div>
+
+
+                </div>
+
+
+                <div id="right-cont" style="float: left; width: 643px;">
+                    <div id="home-4-cont" style="width: 643px; float: left; clear: both; height: 160px; background: #efefef; margin-bottom: 10px;">
+                        <div class="home_4_section">
+                            <a href="donation/donation.html" title="Donate">
+                                <img src="files/images/donate.png" class="reg" alt="Donate for Green Cause" />
+                                <img src="files/images/donate_over.png" class="over" alt="Donate for Green Cause" />
+                            </a>
+                        </div>
+                        <div class="home_4_section">
+                            <a href="volunteer.html" title="volunteer">
+                                <img src="files/images/Volunteer.png" class="reg" alt="Upcoming Events" />
+                                <img src="files/images/Volunteer_over.png" class="over" alt="Upcoming Events" />
+                            </a>
+                        </div>
+
+                        
+
+                        <div class="home_4_section" style="margin: 0;">
+                            <a href="start.html" title="Quiz">
+                                <img style="height: 160px; width: 160px;" src="files/images/quiz.png" class="reg" alt="green Quiz" />
+                                <img style="height: 160px; width: 160px;" src="files/images/quiz_over.png" alt="green Quiz" class="over" />
+                            </a>
+                        </div>
+                        <div class="home_4_section" id="kk">
+                            <a href="Theme.html" title="Gamez">
+                                <img src="files/images/GAMES.png" class="reg" alt="Play A Game" />
+                                <img src="files/images/GAME_OVER.png" class="over" alt="Play A Game" />
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                    <div id="col_topics" style="float: left; width: 315px; margin: 0 10px 0 0;">
+                        <div class="col_head">
+                        </div>
+
+                        <div class="home_section">
+                            <a href="./element.html?element=1" title="Earth">
+                                <img src="files/images/earth.png" class="reg" alt="Earth Section" />
+                                <!--display:block-->
+                                <img src="files/images/earthafter.png" class="over" alt="Earth" />
+                                <!--display none-->
+                            </a>
+
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="element0" href=""></a>
+                            </div>
+                        </div>
+
+                        <div class="home_section">
+                            <a href="element.html?element=2" title="air">
+                                <img src="files/images/air.png" class="reg" alt="Air Section" />
+                                <img src="files/images/airafter.png" class="over" alt="Air Logo" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="element1" href=""></a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="element.html?element=3" title="Energy">
+                                <img src="files/images/energy.png" class="reg" alt="Energy Section" />
+                                <img src="files/images/energyafter.png" class="over" alt="Energy" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="element2" href=""></a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="element.html?element=4" title="Water">
+                                <img src="files/images/water.png" class="reg" alt="Water Section" />
+                                <img src="files/images/waterafter.png" class="over" alt="Water" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="element3" href=""></a>
+                            </div>
+                        </div>
+
+
+                        <div class="home_section">
+                            <a href="element.html?element=5" title="Species">
+                                <img src="files/images/species.png" class="reg" alt="Species Section" />
+                                <img src="files/images/speciesafter.png" class="over" alt="Species" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="element4" href=""></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="col_features" style="float: right; width: 315px; margin: 0 0px 0 0;">
+                        <div class="col_head">
+                        </div>
+
+
+                        <div class="home_section">
+                            <a href="element.html?element=6" title="Laws">
+                                <img src="files/images/government_laws.png" class="reg" alt="Laws Section" />
+                                <img src="files/images/government_laws_over.png" class="over" alt="Laws" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="element5" href=""></a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="greentube.html" title="Green Tube">
+                                <img src="files/images/greentube.png" class="reg" alt="Green Videos Section" />
+                                <img src="files/images/greentube_over.png" class="over" alt="Green Videos" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="element6" href=""></a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="element.html?element=8" title="Green Lifestyle">
+                                <img src="files/images/green_lifestyle.png" class="reg" alt="Green Lifestyle" />
+                                <img src="files/images/green_lifestyle_over.png" class="over" alt="Green Lifestyle" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="element7" href=""></a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="element.html?element=9" title="Green Buildings">
+                                <img src="files/images/green_building.png" class="reg" alt="Green Buildings Section" />
+                                <img src="files/images/green_building_over.png" class="over" alt="Green Buildings" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="element8" href=""></a>
+                            </div>
+                        </div>
+                        <div class="home_section">
+                            <a href="element.html?element=10" title="Current Affairs">
+                                <img src="files/images/current_affairs.png" class="reg" alt="Current Affairs" />
+                                <img src="files/images/current_affiars_over.png" class="over" alt="Current Affairs" />
+                            </a>
+                            <div class="cat_quick_link_arrow"></div>
+                            <div class="cat_quick_link_cont" style="">
+                                <a id="element9" href=""></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END #right-cont-->
+            </div>
+
+
+
+
+
+
+
+            <script type="text/javascript">
+                $('.home_section').hover(
+                      function () {
+                          $(this).find("img.over").fadeIn('fast');
+                          $(this).find("div.cat_quick_link_cont").fadeIn('fast');
+                          $(this).find("div.cat_quick_link_arrow").fadeIn('fast');
+                          $(this).find("img.reg").fadeOut('fast');
+                      },
+                      function () {
+                          $(this).find("img.reg").fadeIn('fast');
+                          $(this).find("img.over").fadeOut('fast');
+                          $(this).find("div.cat_quick_link_cont").fadeOut('fast');
+                          $(this).find("div.cat_quick_link_arrow").fadeOut('fast');
+                      }
+                    );
+                $('.home_4_section').hover(
+                      function () {
+                          $(this).find("img.over").fadeIn('fast');
+                          $(this).find("img.reg").fadeOut('fast');
+                      },
+                      function () {
+                          $(this).find("img.reg").fadeIn('fast');
+                          $(this).find("img.over").fadeOut('fast');
+                      }
+                    );
+            </script>
+
+
+
+        </div>
+        <!-- #main -->
+    </div>
+    <!-- #wrapper -->
+
+
+
+
+    <div id="footer">
+        <div style="width: 986px; margin: 0 auto;">
+            <ul>
+                <li style="margin: 7px 10px 5px 10px; position: relative; float: left; color: aquamarine; font-size: 16px;"><a href="Aboutsite.html">About</a></li>
+
+                <li style="margin: 7px 10px 5px 10px; position: relative; float: left; color: aquamarine; font-size: 16px;"><a href="about.html">Contact Us</a></li>
+
+                <li style="margin: 7px 10px 5px 10px; position: relative; float: left; color: aquamarine; font-size: 16px;"><a href="sitemap.php">SiteMap</a></li>
+
+
+            </ul>
+            <div style="margin-right: 20px; margin-bottom: 2px; text-align: right">
+                <a href="index.html" title="Greenrar">
+                    <img src="files/images/bar button.png" height="30px" /></a>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- #footer -->
+</body>
+</html>

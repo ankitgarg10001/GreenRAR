@@ -1,0 +1,141 @@
+<html>
+<head>
+<script src="datetimepicker_css.js"></script>
+ 
+ <link rel="shortcut icon" type="image/x-icon" href="/files/images/logo.ico">
+    <title>GreenRAR</title>
+    <link rel="stylesheet" type="text/css" media="all" href="/files/style.css" />
+    <link type="text/css" href="/files/jx.bar.css" rel="stylesheet" />
+    <script type="text/javascript" src="files/jquery-1.4.2.min.js"></script>
+    
+    <script src="/files/Main.js"></script>
+    <meta name="google-translate-customization" content="4e2eb08d8a5f60e2-dec951a7106d3688-g7f117e2120f5c955-13" />
+<script>
+function showUser()
+{
+	
+
+var e1 = document.getElementById("d1").value;
+var e2 = document.getElementById("c1").value;
+
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("textHint").innerHTML=xmlhttp.responseText;
+    }
+  }
+
+xmlhttp.open("GET","mid.php?e1="+e1+"&e2="+e2,true);
+xmlhttp.send();
+}
+function showUser1()
+{
+	
+
+var e9 = document.getElementById("s1").value;
+//alert(e9);
+
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("text2").innerHTML=xmlhttp.responseText;
+    }
+  }
+
+xmlhttp.open("GET","insert.php?whyvol="+e9,true);
+xmlhttp.send();
+  $("#ww").hide(1000); 
+}
+function showtext()
+{  
+$("#s1").show(1000);
+$("#s2").show(1000);
+  $("#h1").hide(1000); 
+	}
+</script>
+</head>
+<body>
+<div align="center"><img src="files/images/vol/volunteer.jpg" width="700px" height="250px"></div><br><br><br>
+  <div align="center">
+<table cellspacing="50">
+<tr>
+<td>
+<div id="ww" class="ww">
+<b><i>Why You Want To Volunteer</i></b>
+<br> 
+
+
+<textarea rows="10" cols="25" id="s1" name="whyvol" style="display:none">
+
+</textarea>
+<input type="submit"  value="submit ur reason" onClick="showUser1()">
+<div id="text2">
+</div>
+</div>
+<br>
+<br>
+<input type="button" value="Show the voluteering options" class="s2" id="s2" style="display:none" onClick="showUser()">
+
+</td>
+
+
+<td> 
+
+  <div align="center">
+        <label for="d1"><b><i>Please enter a date for Volunteer</i></b> </label>
+        <input type="Date" id="d1" />
+        <br>
+        <br>
+        <div>
+<b><i>Select Your Required Location</i></b> <select style="margin-right:50px" id="c1" class="c1" >
+<option value="choose"><i>Choose</i></option>
+  <option value="Delhi"><i>Delhi</i></option>
+  <option value="Mumbai"><i>Mumbai</i></option>
+  <option value="Jaipur"><i>Jaipur</i></option>
+  <option value="Kolkata"><i>Kolkata</i></option>
+  
+</select>
+
+</div>
+</div>
+</td>
+
+
+</tr>
+</table>
+</div>
+<br>
+
+<br>
+
+<div >
+
+<img src="files/images/vol/vb.png" width="200px" height="75px" class="h1" id="h1" onClick="showtext()" style="margin-left:950px">
+</div>
+<div id="textHint">
+</div>
+
+<br>
+<br>
+<a href="index.html"><img src="files/images/go-back-icon.png" width="50px" height="30px" style="margin-left:1100px"></a>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?DOCTYPE profil[
+
+<!ELEMENT profile (name,father_name,e_mail,contact)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT father_name (#PCDATA)>
+<!ELEMENT e_mail (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
+
+]?>
+
+<profil>
+- <profile>
+  <name>Ankit Garg</name> 
+  <father_name>N.K. Gupta</father_name> 
+  <e_mail>ankitgarg10001@gmail.com</e_mail> 
+  <contact>9911056604</contact> 
+ </profile>
+-
+- 
+  </profil>
